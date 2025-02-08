@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            counter-reset: section;
+        }
+
+        h1 {
+            counter-reset: subsection;
+        }
+
+        h1::before {
+            counter-increment: section;
+            content: "Section " counter(section) ". ";
+        }
+
+        h2::before {
+            counter-increment: subsection;
+            content: counter(section) "." counter(subsection) " ";
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Nguyễn Việt Dũng-2121051160</h1>
+    <h2>Nguyễn Việt Dũng-2121051160</h2>
+    <h2>Nguyễn Việt Dũng-2121051160</h2>
+    <h2>Nguyễn Việt Dũng-2121051160</h2>
+    <h2>Nguyễn Việt Dũng-2121051160.CSS</h2>
+
+    <h1>Nguyễn Việt Dũng-2121051160</h1>
+    <h2>Nguyễn Việt Dũng-2121051160</h2>
+    <h2>Nguyễn Việt Dũng-2121051160</h2>
+    <h2>Nguyễn Việt Dũng-2121051160</h2>
+
+    <h1>Nguyễn Việt Dũng-2121051160</h1>
+    <h2>Nguyễn Việt Dũng-2121051160</h2>
+    <h2>Nguyễn Việt Dũng-2121051160</h2>
+    <h2>Nguyễn Việt Dũng-2121051160h2>
+
+</body>
+
+</html>
