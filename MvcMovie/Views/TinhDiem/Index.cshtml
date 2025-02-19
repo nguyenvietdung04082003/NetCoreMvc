@@ -1,0 +1,9 @@
+@model MvcMovie.Models.TinhDiem
+<form asp-action="Index">
+    <input asp-for="@Model.FullName">
+    <input asp-for="@Model.DiemA">
+    <input asp-for="@Model.DiemB">
+    <input asp-for="@Model.DiemC">
+    <input type="submit">
+</form>
+<h5>@ViewBag.Message</h5> 
