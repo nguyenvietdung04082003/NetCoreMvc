@@ -21,7 +21,7 @@ namespace MvcMovie.Controllers
           public IActionResult Index( Order model)
         {
              var result = model.Quantity*model.Price;
-             ViewBag.Message = $"Bạn {model.FullName} đã mua {model.Quantity} {model.ProductName} có giá {model.Price}đ và tổng tiền là {result} vào ngày{model.CreatedDate.DayOfYear}";
+             ViewBag.Message = $"Bạn {model.FullName} đã mua {model.Quantity} {model.ProductName} có giá {model.Price}đ và tổng tiền là :{result} vào ngày{model.CreatedDate.DayOfYear}";
             return View();
         }
 

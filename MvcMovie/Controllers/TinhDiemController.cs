@@ -32,7 +32,7 @@ namespace MvcMovie.Controllers
                 ViewBag.Message = $"Bạn {model.FullName} có két quả là {result} với điểm thành phần A:{model.DiemA},B:{model.DiemB},C:{model.DiemC} và kHÁ";
             }
             else {
-                ViewBag.Message = $"Bạn {model.FullName} có két quả là {result} với điểm thành phần A:{model.DiemA},B:{model.DiemB},C:{model.DiemC} và giỏi";
+                ViewBag.Message = $"Bạn {model.FullName} có két quả là: {result} với điểm thành phần A:{model.DiemA},B:{model.DiemB},C:{model.DiemC} và giỏi";
 
             }
             return View();

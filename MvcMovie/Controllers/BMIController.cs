@@ -14,7 +14,7 @@ namespace Mvmovie.Controllers
         {
             var result = bmi.CanNang/(bmi.ChieuCao*bmi.ChieuCao);
           if(result<15.8){
-              ViewBag.message = $"Xin chào {bmi.HoTen} {bmi.Tuoi} tuổi có chiều cao là: {bmi.ChieuCao} m có cân nặng là: {bmi.CanNang} kg có chỉ số BMI là {result} bạn gầy";
+              ViewBag.message = $"Xin chào bạn {bmi.HoTen} {bmi.Tuoi} tuổi có chiều cao là: {bmi.ChieuCao} m có cân nặng là: {bmi.CanNang} kg có chỉ số BMI là {result} bạn gầy";
           }
           else 
           if(result>=15.8&& result<=24.9){
