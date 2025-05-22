@@ -1,0 +1,9 @@
+@model MvcMovie.Models.Order
+<form asp-action="Index">
+    <input asp-for="@Model.FullName">
+    <input asp-for="@Model.ProductName">
+    <input asp-for="@Model.Price">
+    <input asp-for="@Model.Quantity">
+    <input type="submit">
+</form>
+<h4>@ViewBag.Message</h4>
